@@ -1,0 +1,39 @@
+﻿<!-- Main content -->
+
+@{
+    string pageName = (ViewData["pagename"] == null ? "index" : ViewData["pagename"].ToString());
+
+    BIPortal.Models.UI.PageModel pageModel;
+    if (null == ViewData["page_model"])
+    {
+        pageModel = new BIPortal.Models.UI.PageModel(pageName);
+        pageModel.SetLanguage(ViewData["VIEWDATA_LANGUAGE"]);
+    }
+    else
+    {
+        pageModel = (BIPortal.Models.UI.PageModel)ViewData["page_model"];
+    }
+
+}
+
+<div class="content-wrapper">
+    @if (!string.IsNullOrEmpty(ViewBag.PageTitle))
+    {
+        <div class="page-header page-header-default">
+            <div class="page-header-content row">
+                <div class="page-title">
+                    <h4><span class="text-semibold">@(ViewBag.PageTitle)</span></h4>
+                </div>
+            </div>
+        </div>
+    }
+    <div class="content">
+        @{
+            string actionBlock = (null == ViewData["action_block"] ? "Home/block_welcome" : ViewData["action_block"].ToString());
+            actionBlock = actionBlock + ".cshtml";
+
+        }
+        @Html.Partial("~/views/" + actionBlock, ViewData["BlockData"])
+    </div>
+    <!-- /page content -->
+</div>

@@ -1,0 +1,68 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+@using System.Web.Mvc.Html
+@using BIPortal.Models.UI;
+@using BIPortal.Models.BusinessModels;
+@{
+    //****************************************DECLARE BLOCK MODEL********************************************************/
+    object languageObject = ViewData["VIEWDATA_LANGUAGE"];
+    BlockLoginLangModel blockLoginLang = new BlockLoginLangModel();
+    BlockModel blockLoginModel = new BlockModel("block_login", languageObject, blockLoginLang);
+
+}
+<style>
+    .navbar-brand > img {
+        height: 60%;
+        width: auto;
+        margin-top: -5px;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @{
+        BIPortal.Models.UI.PageModel pageModel = new BIPortal.Models.UI.PageModel("login");
+        pageModel.SetLanguage(ViewData["VIEWDATA_LANGUAGE"]);
+    }
+    @Html.Partial("~/views/login_header.cshtml", pageModel)
+</head>
+<body class="login-container">
+    <!-- Main navbar -->
+    @*<div class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" style="color:white"><img src="~/resources/images/SWH_Logo.png" alt=""></a>
+            <ul class="nav navbar-nav pull-right visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+            </ul>
+        </div>
+     
+    </div>*@
+    <!-- /main navbar -->
+    <!-- Page container -->
+    <div class="page-container">
+        <!-- Page content -->
+        <div class="page-content">
+            <!-- Main content -->
+            <div class="content-wrapper">
+                <!-- Content area -->
+                <div class="content">
+
+                    @Html.Partial("~/views/block_login.cshtml", blockLoginModel);
+
+                    <!-- /simple login form -->
+                    <!-- Footer -->
+                    @*<div class="footer text-muted text-center">
+                        @Html.Partial("~/views/block_trademark.cshtml");
+
+                    </div>*@
+                    <!-- /footer -->
+                </div>
+                <!-- /content area -->
+            </div>
+            <!-- /main content -->
+        </div>
+        <!-- /page content -->
+    </div>
+    <!-- /page container -->
+</body>
+</html>

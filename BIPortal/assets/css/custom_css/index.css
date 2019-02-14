@@ -1,0 +1,78 @@
+/*****************************************MENU LIST *********************************************/
+.menu_level_1 {
+    margin-left: 0px;
+}
+
+option.menu_level_2 {
+    margin-left: 30px;
+    padding-left: 30px;
+    text-indent: 30px;
+    color: red;
+}
+
+option.menu_level_3 {
+    margin-left: 60px;
+    padding-left: 100px;
+}
+/*****************************************MENU LIST *********************************************/
+
+
+
+tr.notyet_hassale {
+    background-color: yellow;
+}
+
+
+
+/****************************************VGS ********************************/
+tr.vgs_hovered {
+    border: solid 2px #0026ff;
+    background-color: #808080;
+    opacity: 0.5;
+}
+
+tr.uneditable {
+    background-color: darkgray;
+}
+
+tr.vgs_selected {
+    background-color: #ede4e4;
+}
+
+tr.vgs_selected_edit {
+    border: solid 2px #0026ff;
+}
+
+.vgs_row_edit_hidden {
+    display: none;
+}
+
+div.vgs_row_edit_show {
+    z-index: 999;
+    padding: 3px;
+    width: 400px;
+    background-color: #f0f1d1;
+}
+
+.loading {
+    background: no-repeat url('ajax-loading.gif');
+    width: 500px;
+    height: 200px;
+}
+
+.unloading {
+    display: none;
+}
+.td_edit {
+    width: 100%;
+    margin: -6px -20px;
+    padding: 4px 2px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/****************************************END VGS ********************************/

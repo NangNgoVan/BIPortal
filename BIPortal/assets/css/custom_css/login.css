@@ -1,0 +1,12 @@
+.navbar-brand >img {
+    height: 120%;
+    width: auto;
+    margin: auto;
+}
+.navbar {
+    height: 63px;
+}
+
+.navbar-brand {
+    height: 100px;
+}

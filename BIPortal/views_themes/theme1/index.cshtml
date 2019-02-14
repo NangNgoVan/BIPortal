@@ -1,0 +1,40 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+@using System.Web.Mvc.Html
+@using BIPortal.Models.UI;
+@using BIPortal.Models.BusinessModels;
+@{
+    //****************************************DECLARE BLOCK MODEL********************************************************/
+    object languageObject = ViewData["VIEWDATA_LANGUAGE"];
+    BlockLoginLangModel blockLoginLang = new BlockLoginLangModel();
+    BlockModel blockLoginModel = new BlockModel("block_login", languageObject, blockLoginLang);
+
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @{
+        string pageName = (ViewData["pagename"] == null ? "index" : ViewData["pagename"].ToString());
+
+        BIPortal.Models.UI.PageModel pageModel;
+        if (null == ViewData["page_model"])
+        {
+            pageModel = new BIPortal.Models.UI.PageModel(pageName);
+            pageModel.SetLanguage(ViewData["VIEWDATA_LANGUAGE"]);
+        }
+        else
+        {
+            pageModel = (BIPortal.Models.UI.PageModel)ViewData["page_model"];
+        }
+
+
+
+        @Html.Partial("~/views/index_header.cshtml", pageModel)
+    }
+</head>
+<body class="navbar-top">
+    @Html.Partial("~/views/index_navbar.cshtml")
+    @Html.Partial("~/views/index_body.cshtml")
+</body>
+</html>

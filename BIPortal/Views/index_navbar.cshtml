@@ -1,0 +1,84 @@
+﻿@using BIPortal.Helpers;
+@*@model BIPortal.Services.User.BlockDataMenuLeftModel*@
+@using BIPortal.Models.EntityModels;
+
+<!-- Main navbar -->
+<div class="navbar navbar-inverse" style="position: sticky; top: 0; z-index: 999">
+    <div class="navbar-header">
+        <a class="navbar-brand" href=""><img src="~/resources/images/SWH_Logo.png" alt=""></a>
+        <ul class="nav navbar-nav visible-xs-block">
+            <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+            <li><a class="sidebar-mobile-main-toggle"><i class="icon-enter2 rotate-180"></i></a></li>
+
+        </ul>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-mobile">
+        @{
+            IEnumerable<EntityMenuModel> menuData = (IEnumerable<EntityMenuModel>)ViewData["MenuHeaderData"];
+            UIMenuTreeHelper tree = new UIMenuTreeHelper(menuData);
+        }
+        <ul class="nav navbar-nav">
+            @if ((null != Session["IsAdmin"]) && ((bool)Session["IsAdmin"] == true))
+            {
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Quản lý người dùng<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="~/Users/List">Danh sách người dùng</a>
+                        </li>
+                        <li><a href="~/Roles/List">Danh sách nhóm người dùng</a></li>
+                        @if ((bool)Session["IsSuperAdmin"])
+                        {
+                            <li><a href="~/Menus/List">Danh sách chức năng</a></li>
+                        }
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Quản lý hệ thống<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="~/Logs/Index">Xem log hệ thống</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    @if ((bool)Session["IsSuperAdmin"])
+                    {
+                        <a class="dropdown-toggle" data-toggle="dropdown">Đồng bộ dữ liệu<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="~/ETLFastSales/ETLFastSale">ETL</a></li>
+                            <li><a href="~/CallAPI/CallAPI">Đồng bộ dữ liệu từ Fast</a></li>
+
+                        </ul>
+                    }
+                </li>
+            }
+            @if (!(bool)Session["IsSuperAdmin"])
+            {
+                @Html.Raw(tree.BuidNavMenuInItem(tree.RootId))
+            }
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown dropdown-user">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="~/Resources/images/avartar.png" alt="">
+                    @if (Session["UserName"] != null)
+                    {
+                        <span>
+                            @Html.Raw(Session["UserName"].ToString())
+                        </span>
+                    }
+
+                    <i class="caret"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+
+                    <li><a href="~/DefaultPage/SetDefaultPage?id=@Session["session_userid"] "><i class="icon-user-plus"></i> Trang mặc định</a></li>
+
+                    <li><a href="~/Home/Logout"><i class="icon-switch2"></i> Đăng Xuất</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /main navbar -->

@@ -1,0 +1,88 @@
+﻿@using BIPortal.Models.BusinessModels;
+
+@model BIPortal.Models.UI.BlockModel
+
+@{
+    /**/
+
+    /**/
+
+    BlockLoginLangModel languageBlock = (BlockLoginLangModel)Model.LanguageModel;
+
+}
+
+<style>
+    .navbar-brand > img {
+        height: 60%;
+        width: auto;
+        margin-top: -5px;
+    }
+
+    .login-container {
+        position: absolute;
+        background-image: url('../Resources/images/Medical.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .panel-body {
+        padding: 10px;
+    }
+
+    .login-form {
+        position: relative;
+        width: 280px !important;
+        border-radius: 10px;
+        opacity: 0.9;
+    }
+
+    .login-container .page-container .login-form, .login-container .page-container .registration-form {
+        margin: 60px auto 20px auto;
+    }
+</style>
+@using (Html.BeginForm(new { data_toggle = "validator", role = "form" }))
+{
+
+    <div>
+
+        <form class="login">
+
+            <div class="panel panel-body login-form panel-flat">
+                <div class="text-center">
+                    <div>
+                        <img src="~/Resources/images/vietba_Logo.png" style="width:90px; height:90px" href="" />
+                    </div>
+                    <h5 class="content-group">@languageBlock.BlockTitle <small class="display-block">@languageBlock.LblHelpTitle</small></h5>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-left">
+                    <input type="text" class="form-control" placeholder="@languageBlock.LblUserName" name="UserName" required oninvalid="setCustomValidity('@languageBlock.LblUserName')">
+                    <div class="form-control-feedback">
+                        <i class="icon-user text-muted text-center"></i>
+                    </div>
+                </div>
+                <div class="form-group has-feedback has-feedback-left">
+                    <div class="form-control-feedback">
+                        <i class="icon-lock2 text-muted"></i>
+                    </div>
+                    <input type="password" class="form-control" placeholder="@languageBlock.LblPassword" name="Password" required oninvalid="setCustomValidity('@languageBlock.LblPassword')">
+
+                </div>
+
+                <div class="form-group">
+                    <span class="text-warning-400 text-italic">
+                        <b>  @ViewData["LOGIN_FAIL_MESSAGE"] </b>
+                    </span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block loginfil">@languageBlock.BtnSubmit<i class="icon-circle-right2 position-right"></i></button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+
+}

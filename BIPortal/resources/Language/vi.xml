@@ -1,0 +1,776 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<roots>
+  <commons>
+    <system_title>Hệ thống nghiệp vụ thông minh</system_title>
+    <messages>
+      <ServerError>Hệ thống đang bận-không phản hồi</ServerError>
+    </messages>
+  </commons>
+  <messages>
+    <block_login>
+      <success>Đăng nhập thành công</success>
+      <error_business_1>Tên đăng nhập hoặc mật khẩu không đúng</error_business_1>
+
+    </block_login>
+    <block_role_create>
+      <success>Thêm mới nhóm quyền thành công</success>
+      <success_edit>Chỉnh sửa nhóm quyền thành công</success_edit>
+      <error_business_1>Có lỗi</error_business_1>
+    </block_role_create>>
+
+    <block_create_menu>
+      <success>Thêm mới chức năng thành công</success>
+      <success_edit>Chỉnh sửa  chức năng thành công</success_edit>
+      <error_business_1>Có lỗi</error_business_1>
+    </block_create_menu>
+
+    <block_role_list>
+      <success>Thêm mới nhóm người dùng thành công</success>
+      <success_delete>Xóa nhóm người dùng thành công</success_delete>
+    </block_role_list>
+    <block_user_create>
+      <success>Thêm mới  người dùng thành công</success>
+      <success_edit>Chỉnh sửa  người dùng thành công</success_edit>
+      <error_business_1>Có lỗi</error_business_1>
+    </block_user_create>
+    <block_user_list>
+      <success_delete>Xóa  người dùng thành công</success_delete>
+    </block_user_list>
+    <block_user_changepw>
+      <not_equalto>Mật khẩu và nhập lại mật khẩu không giống nhau</not_equalto>
+      <not_exist_user>Mật khẩu cũ không đúng</not_exist_user>
+      <success>Thay đổi mật khẩu thành công </success>
+    </block_user_changepw>
+    <block_upload_excel>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel>
+
+    <block_upload_excel_business_plan>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel_business_plan>
+
+    <block_upload_excel_hrplanning>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel_hrplanning>
+
+    <block_upload_excel_fin01>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel_fin01>
+
+    <block_upload_excel_fin02>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel_fin02>
+
+    <block_upload_excel_fin03>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel_fin03>
+
+    <block_upload_excel_fin04>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel_fin04>
+
+    <block_upload_excel_fin05>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel_fin05>
+
+    <block_upload_excel_fin06>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel_fin06>
+
+    <block_upload_excel_fin07>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel_fin07>
+
+    <block_upload_excel_fin08>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel_fin08>
+
+    <block_upload_excel_fin09>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel_fin09>
+
+    <block_upload_excel_fin10>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel_fin10>
+
+    <block_upload_excel_FIN01_SWH>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel_FIN01_SWH>
+
+    <block_upload_excel_hr01plan>
+      <success>Upload thành công </success>
+      <error>Có lỗi xảy ra, mời bạn xem lại file upload:</error>
+    </block_upload_excel_hr01plan>
+
+  </messages>
+  <pages>
+    <change_password>
+      <title>Thay đổi mật khẩu</title>
+    </change_password>
+    <login>
+      <title>Đăng nhập </title>
+    </login>
+    <index>
+      <title>Hệ thống báo cáo quản trị thông minh - SUN WORLD</title>
+    </index>
+    <menu_create>
+      <title>Tạo mới menu</title>
+    </menu_create>
+
+    <menu_list>
+      <title>Danh sách menu</title>
+    </menu_list>
+    <role_list>
+      <title>Danh sách nhóm người dùng</title>
+    </role_list>
+
+    <role_create>
+      <title>Tạo mới nhóm người dùng</title>
+    </role_create>
+    <role_edit>
+      <title>Chỉnh sửa nhóm người dùng</title>
+    </role_edit>
+    <user_create>
+      <title>Tạo mới người dùng</title>
+    </user_create>
+    <user_edit>
+      <title>Chỉnh sửa người dùng</title>
+    </user_edit>
+    <user_list>
+      <title>Danh sách người dùng</title>
+    </user_list>
+
+    <upload_excel>
+      <title>Upload excel</title>
+      <page_excel>
+        <menu2>
+          <title>Upload excel - Kết Quả Kinh Doanh</title>
+          <h1>Upload excel - Báo cáo kết quả kinh doanh</h1>
+          <UploadedDirectory>kqkinhdoanh</UploadedDirectory>
+        </menu2>
+
+        <menu3>
+          <title>Upload excel - Kế Hoạch Kinh Doanh</title>
+          <h1>Upload excel - Báo cáo kế hoạch kinh doanh</h1>
+          <UploadedDirectory>khkinhdoanh</UploadedDirectory>
+        </menu3>
+
+        <menu4>
+          <title>Upload excel - Định Biến Nhân Sự</title>
+          <h1>Upload excel - Định biến nhân sự</h1>
+          <UploadedDirectory>dinhbienns</UploadedDirectory>
+        </menu4>
+
+        <menu25>
+          <title>Upload excel - UpLoadFIN01</title>
+          <h1>Upload excel - FIN01 Plan</h1>
+          <UploadedDirectory>Fin01-Plan</UploadedDirectory>
+        </menu25>
+        <menu38>
+          <title>Upload excel - UpLoadFIN02</title>
+          <h1>Upload excel - FIN02 Plan</h1>
+          <UploadedDirectory>Fin02-Plan</UploadedDirectory>
+        </menu38>
+        <menu39>
+          <title>Upload excel - UpLoadFIN03</title>
+          <h1>Upload excel - FIN03 Plan</h1>
+          <UploadedDirectory>Fin03-Plan</UploadedDirectory>
+        </menu39>
+        <menu40>
+          <title>Upload excel - UpLoadFIN04</title>
+          <h1>Upload excel - FIN04 Plan</h1>
+          <UploadedDirectory>Fin04-Plan</UploadedDirectory>
+        </menu40>
+        <menu41>
+          <title>Upload excel - UpLoadFIN05</title>
+          <h1>Upload excel - FIN05 Plan</h1>
+          <UploadedDirectory>Fin05-Plan</UploadedDirectory>
+        </menu41>
+        <menu42>
+          <title>Upload excel - UpLoadFIN06</title>
+          <h1>Upload excel - FIN06 Plan</h1>
+          <UploadedDirectory>Fin06-Plan</UploadedDirectory>
+        </menu42>
+        <menu43>
+          <title>Upload excel - UpLoadFIN07</title>
+          <h1>Upload excel - FIN07 Plan</h1>
+          <UploadedDirectory>Fin07-Plan</UploadedDirectory>
+        </menu43>
+        <menu44>
+          <title>Upload excel - UpLoadFIN08</title>
+          <h1>Upload excel - FIN08 Plan</h1>
+          <UploadedDirectory>Fin08-Plan</UploadedDirectory>
+        </menu44>
+        <menu45>
+          <title>Upload excel - UpLoadFIN09</title>
+          <h1>Upload excel - FIN09 Plan</h1>
+          <UploadedDirectory>Fin09-Plan</UploadedDirectory>
+        </menu45>
+        <menu46>
+          <title>Upload excel - UpLoadFIN10</title>
+          <h1>Upload excel - FIN10 Plan</h1>
+          <UploadedDirectory>Fin10-Plan</UploadedDirectory>
+        </menu46>
+
+
+        <menu186>
+          <title>Upload excel - Đổ số dư</title>
+          <h1>Upload excel - Đổ số dư</h1>
+          <UploadedDirectory>dosodu</UploadedDirectory>
+        </menu186>
+        <menu185>
+          <title>Upload excel - HR01Plan</title>
+          <h1>Upload excel - HR01 Plan</h1>
+          <UploadedDirectory>dinhbienns</UploadedDirectory>
+        </menu185>
+
+      </page_excel>
+    </upload_excel>
+
+    <Embed_Tableau>
+      <title>Hệ thống báo cáo quản trị thông minh - SUN WORLD</title>
+    </Embed_Tableau>
+
+    <HR01Plan>
+      <title>HR01Plan</title>
+    </HR01Plan>
+
+
+    <SetDefaultPage>
+      <title>Trang mặc định</title>
+    </SetDefaultPage>
+
+    <ReportSWH>
+      <title>SWH - Báo cáo tháng các đơn vị</title>
+    </ReportSWH>
+
+    <ConfigTemplate>
+      <title>Cấu hình </title>
+    </ConfigTemplate>
+
+    <FastConfigTemplate>
+      <title>Cấu hình chỉ tiêu FIN</title>
+    </FastConfigTemplate>
+
+    <logs_role_list>
+      <title>Hệ thống ghi logs</title>
+    </logs_role_list>
+    
+    <FIN01_Plan>
+      <title>Kế hoạch kinh doanh Hạ Long Complex</title>
+    </FIN01_Plan>
+    <FIN02_Plan>
+      <title>Kế hoạch kinh doanh bộ phận bãi biển</title>
+    </FIN02_Plan>
+    <FIN03_Plan>
+      <title>Kế hoạch kinh doanh bộ phận cáp treo</title>
+    </FIN03_Plan>
+    <FIN04_Plan>
+      <title>Kế hoạch kinh doanh bộ phận công viên Rồng</title>
+    </FIN04_Plan>
+    <FIN05_Plan>
+      <title>Kế hoạch kinh doanh bộ phận công viên Nước</title>
+    </FIN05_Plan>
+    <FIN06_Plan>
+      <title>Kế hoạch kinh doanh nhà hàng - khu vực cáp treo</title>
+    </FIN06_Plan>
+    <FIN07_Plan>
+      <title>Kế hoạch bộ phận game và bảo tàng sáp</title>
+    </FIN07_Plan>
+    <FIN08_Plan>
+      <title>Kế hoạch kinh doanh nhà hàng - khu vực công viên rồng</title>
+    </FIN08_Plan>
+    <FIN09_Plan>
+      <title>Kế hoạch kinh doanh nhà hàng - khu vực công viên nước</title>
+    </FIN09_Plan>
+    <FIN10_Plan>
+      <title>Kế hoạch kinh doanh bộ phận khác</title>
+    </FIN10_Plan>
+    <COST01_Plan>
+      <title>Định mức chi phí Hạ Long Complex</title>
+    </COST01_Plan>
+    <REV01_Plan>
+      <title>Kế hoạch doanh thu Hạ Long Complex</title>
+    </REV01_Plan>
+    <Rev02_F>
+      <title>Kế hoạch kinh doanh theo ngày</title>
+    </Rev02_F>
+    <ReportFINDetail>
+      <title>Kết xuất chứng từ chi tiết theo chỉ tiêu</title>
+    </ReportFINDetail>
+
+    <ReportFinDetailExclude>
+      <title>Kết xuất danh sách chứng từ  BI không sử dụng để tính PLN</title>
+    </ReportFinDetailExclude>
+    
+    <VoucherList>
+      <title>So sánh bảng kê chứng từ BI-FAST</title>
+    </VoucherList>
+    
+    <ProductNotYetConfig>
+      <title>VGS - Sản phẩm chưa cấu hình</title>
+    </ProductNotYetConfig>
+
+    <ProductConfig>
+      <title>
+        VGS - Sản phẩm cấu hình
+      </title>
+    </ProductConfig>
+    <ExportRevenue>
+      <title>
+        Kết xuất doanh thu theo ngày
+      </title>
+    </ExportRevenue>
+
+    <PixelPointNotYetConfigTemplate>
+      <title>
+        Danh sách Station chưa cấu hình
+      </title>
+    </PixelPointNotYetConfigTemplate>
+
+    <SWPEVD002>
+      <title>
+        Kết xuất báo cáo doanh thu Hạ Long Complex theo ngày
+      </title>
+      
+    </SWPEVD002>
+
+    <IncomeReportVGS>
+      <title>Đối chiếu vé VSG và BI</title>
+    </IncomeReportVGS>
+    <ETL1FastSale>
+      <title>Đồng bộ dữ liệu từ Fast</title>
+    </ETL1FastSale>
+
+    <API>
+      <title>Đồng tự dữ liệu từ SynchronizeFast</title>
+    </API>
+    <RunningVBA>
+      <title>Kết xuất báo cáo P.L</title>
+    </RunningVBA>
+    
+  </pages>
+
+  <blocks>
+
+    <block_upload_excel>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel>
+
+    <block_upload_excel_business_plan>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel_business_plan>
+
+    <block_upload_excel_hrplanning>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel_hrplanning>
+
+    <block_upload_excel_fin01>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel_fin01>
+
+    <block_upload_excel_fin02>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel_fin02>
+
+    <block_upload_excel_fin03>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel_fin03>
+
+    <block_upload_excel_fin04>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel_fin04>
+
+    <block_upload_excel_fin05>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel_fin05>
+
+    <block_upload_excel_fin06>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel_fin06>
+
+    <block_upload_excel_fin07>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel_fin07>
+
+    <block_upload_excel_fin08>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel_fin08>
+
+    <block_upload_excel_fin09>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel_fin09>
+
+    <block_upload_excel_fin10>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel_fin10>
+
+    <block_upload_excel_FIN01_SWH>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel_FIN01_SWH>
+
+    <block_upload_excel_hr01plan>
+      <Filehoder>Chọn file</Filehoder>
+      <Username>Tài khoản</Username>
+      <Fullname>Họ tên</Fullname>
+      <Uploadedtime>Thời gian upload</Uploadedtime>
+      <Uploadmonth>Tháng</Uploadmonth>
+      <Uploadyear>Năm</Uploadyear>
+      <Dowload>Tải xuống</Dowload>
+      <Page_next>Trang tiếp</Page_next>
+      <Page_pre>Trang trước</Page_pre>
+      <Btnupload>Tải lên</Btnupload>
+      <Helpdoc>Tài liệu hướng dẫn sử dụng</Helpdoc>
+      <HistoryTitle>Lịch sử upload</HistoryTitle>
+      <Month>Tháng</Month>
+      <PerPage>Số bản ghi</PerPage>
+      <Year>Năm</Year>
+      <Search>Tìm kiếm</Search>
+      <NumberInsertedRow><![CDATA[Số bản ghi đã upload]]></NumberInsertedRow>
+    </block_upload_excel_hr01plan>
+
+    <block_user_changepw>
+      <title>Thay đổi mật khẩu</title>
+      <OldPassword>Mật khẩu cũ</OldPassword>
+      <Password>Mật khẩu mới</Password>
+      <ConfirmPassword>Nhập lại mật khẩu mới</ConfirmPassword>
+
+      <BtnSubmit>Lưu kết quả</BtnSubmit>
+    </block_user_changepw>
+    <block_user_create>
+      <title> Tạo mới người dùng</title>
+      <title_edit>Sửa thông tin người dùng </title_edit>
+      <UserName>Tên đăng nhập</UserName>
+      <Password>Mật khẩu</Password>
+      <ConfirmPassword>Nhập lại mật khẩu</ConfirmPassword>
+      <Email>Địa chỉ email</Email>
+      <Phone>Số điện thoại</Phone>
+      <Organization>Đơn vị</Organization>
+      <Status>Trạng thái</Status>
+      <IsAdmin>Có là admin? </IsAdmin>
+      <Roles>Thuộc vào nhóm người dùng</Roles>
+      <Menus>Được sử dụng các menu:</Menus>
+      <BtnSubmit>Lưu kết quả</BtnSubmit>
+    </block_user_create>
+    <block_user_list>
+      <title>Danh sách người dùng</title>
+      <LblNo>Số TT</LblNo>
+      <Lblname>Tên đăng nhập</Lblname>
+      <Email>Địa chỉ email</Email>
+      <Phone>Số điện thoại</Phone>
+      <Roles>Nhóm người dùng</Roles>
+      <Menus>Được sử dụng các menu</Menus>
+
+      <LblDescription>Mô tả</LblDescription>
+      <LblAction>Chỉnh sửa dữ liệu (Sửa, Xóa) </LblAction>
+      <LblEdit>Sửa </LblEdit>
+      <LblDelete>Xóa </LblDelete>
+      <LBLConfirmDelete>Bạn có chắc xóa không?</LBLConfirmDelete>
+
+    </block_user_list>
+    <block_role_create>
+      <title> Tạo mới nhóm người dung</title>
+      <title_edit>Sửa nhóm người dùng </title_edit>
+      <Lblname>Tên nhóm</Lblname>
+      <LblMenus>Danh sách menu</LblMenus>
+      <LblDescription>Mô tả</LblDescription>
+
+      <BtnSubmit>Lưu kết quả</BtnSubmit>
+
+    </block_role_create>
+    <block_role_list>
+      <title>Danh sách nhóm người dùng</title>
+      <LblNo>Số TT</LblNo>
+      <Lblname>Tên role</Lblname>
+      <LblDescription>Mô tả</LblDescription>
+      <LblAction>Chỉnh sửa dữ liệu (Sửa, Xóa) </LblAction>
+      <LblEdit>Sửa </LblEdit>
+      <LblDelete>Xóa </LblDelete>
+      <LBLConfirmDelete>Bạn có chắc xóa không?</LBLConfirmDelete>
+
+    </block_role_list>
+    <block_menu_list>
+      <title>Danh sách menu</title>
+      <LblNo>Số TT</LblNo>
+      <Lblname>Tên menu</Lblname>
+      <Lblparent>Danh mục cha</Lblparent>
+      <LblPath>Đường dẫn</LblPath>
+      <LblPriority>Thứ tự hiển thị</LblPriority>
+      <LblAction>Chỉnh sửa dữ liệu (Sửa, Xóa) </LblAction>
+      <LblEdit>Sửa </LblEdit>
+      <LblDelete>Xóa </LblDelete>
+      <LBLConfirmDelete>Bạn có chắc xóa không?</LBLConfirmDelete>
+    </block_menu_list>
+
+    <block_create_menu>
+      <title> Tạo mới menu </title>
+      <title_edit>Sửa menu </title_edit>
+      <Lblname>Tên menu</Lblname>
+      <Lblparent>Danh mục cha</Lblparent>
+      <LblPath>Đường dẫn</LblPath>
+      <LblSiteRoot>Site Root</LblSiteRoot>
+      <LblPathTableau>Url Tableau</LblPathTableau>
+      <LblPriority>Thứ tự hiển thị</LblPriority>
+      <BtnSubmit>Lưu kết quả</BtnSubmit>
+    </block_create_menu>
+    <block_login>
+      <title> Đăng nhập</title>
+      <LblHelpTitle>Nhập thông tin bên dưới</LblHelpTitle>
+      <LblUserName>Tên đăng nhập</LblUserName>
+      <LblPassword>Mật khẩu</LblPassword>
+      <BtnSubmit>Đăng nhập</BtnSubmit>
+      <LblForgetPassword>Quên mật khẩu</LblForgetPassword>
+    </block_login>
+    <block_trademark>
+      <company_title>SUN WORLD</company_title>
+    </block_trademark>
+
+    <block_welcome>
+      <Lblwelcome>
+        <![CDATA[
+        Chào mừng bạn đến với hệ thống quản trị thông minh ---  <b>............</b>
+        ]]>
+      </Lblwelcome>
+    </block_welcome>
+
+
+  </blocks>
+</roots>
